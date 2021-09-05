@@ -38,6 +38,7 @@ public:
     float getKvalue(); 
     float getTdsValue();
     float getEcValue();
+    void ecCalibration(byte mode);
 
 private:
     int pin;
@@ -58,7 +59,6 @@ private:
     void readKValues();
     boolean cmdSerialDataAvailable();
     byte cmdParse();
-    void ecCalibration(byte mode);
 };  
 
 #endif
